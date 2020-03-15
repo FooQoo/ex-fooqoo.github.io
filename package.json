@@ -4,6 +4,10 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs" 
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vue-google-adsense": "^1.8.1",
+    "vue-script2": "^2.1.0"
   }
 }

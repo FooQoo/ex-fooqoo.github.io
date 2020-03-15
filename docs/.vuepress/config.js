@@ -20,4 +20,17 @@ module.exports = {
        ]
     },
     displayAllHeaders: true
+    head: [
+        [
+            'script',
+            {
+                'async src': '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+            }
+        ],
+        [
+            'script',
+            {},
+            '(adsbygoogle = window.adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1144207358103797", enable_page_level_ads: true  });'
+        ]
+    ]
 }
