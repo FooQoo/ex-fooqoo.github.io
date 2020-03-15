@@ -3,7 +3,7 @@ name: github pages
 on:
     push:
         branches:
-            - master
+            - develop
 
 jobs:
     deploy:
@@ -21,3 +21,4 @@ jobs:
               with:
                     deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
                     publish_dir: ./docs/.vuepress/dist
+                    published_branch: master
