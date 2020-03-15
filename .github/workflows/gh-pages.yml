@@ -16,7 +16,7 @@ jobs:
               with:
                   node-version: '10.x'
 
-            - name: deploy
+            - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
               with:
                     delopy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
