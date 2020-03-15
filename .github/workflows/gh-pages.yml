@@ -16,7 +16,10 @@ jobs:
               with:
                   node-version: '10.x'
 
-            - name: Deploy
+            - name: build
+              run: yarn docs:build
+
+            - name: deploy
               uses: peaceiris/actions-gh-pages@v3
               with:
                     deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
