@@ -15,4 +15,21 @@
 - `docs/.vuepress/config.js`: Entry file?の設定ファイル
 - `docs/.vuepress/enhanceApp.js`: App level enhancement??
 
-
+## sidebar
+サイドバーを設置して、カテゴリーごとに展開したい場合は、
+以下のように実装する。
+```js
+module.exports = {
+    themeConfig: {
+        sidebar: [
+            {
+                title: 'title',
+                collapsable: true,
+                children: [
+                    'to/your/children'
+                ]
+            }
+        ]
+    }
+}
+```
