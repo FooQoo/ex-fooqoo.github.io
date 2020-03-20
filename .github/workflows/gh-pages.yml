@@ -29,7 +29,7 @@ jobs:
                       ${{ runner.os }}-yarn-
             
             - run: yarn install
-            - run: npm run docs:build    
+            - run: yarn docs:build    
 
             - name: deploy
               uses: peaceiris/actions-gh-pages@v3
