@@ -30,6 +30,27 @@ module.exports = {
             'script',
             {},
             '(adsbygoogle = window.adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-1144207358103797", enable_page_level_ads: true  });'
+        ],
+        [
+            'link',
+            {
+                rel: 'stylesheet',
+                href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css'
+            }
+
         ]
-    ]
+    ],
+    markdown: {
+        anchor: { permalink: false},
+        toc: {includeLevel: [1, 2]},
+        extendMarkdown: md => {
+            md.use(require('markdown-it-emoji'));
+            md.use(require('markdown-it-footnote'));
+            md.use(require('markdown-it-sanitizer'));
+            md.use(require('@iktakahiro/markdown-it-katex'), {"throwOnError" : false, "errorColor" : " #cc0000"});
+            md.use(require('markdown-it-imsize'), {autofil: true});
+            md.use(require('markdown-it-checkbox'));
+            md.use(require('markdown-it-sub'));
+        }
+    }
 }
