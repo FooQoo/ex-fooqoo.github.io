@@ -4,18 +4,17 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: '開発', link: '/dev/' },
-
+            { text: '開発', link: '/Dev/' },
+            { text: 'ライフハック', link: '/LifeHack/' },
         ],
         sidebar: [
-            '/',
             {
-                title: '開発',
+                title: '2020-03',
                 collapsable: true,
                 children: [
-                    '/dev/vuepress.html'
-                ],
-                path: '/dev/'
+                    '/Dev/vuepress.html',
+                    '/LifeHack/shinkansen_2020_0320.html'
+                ]
             }
        ]
     },
