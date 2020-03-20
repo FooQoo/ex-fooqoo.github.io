@@ -46,11 +46,22 @@ module.exports = {
         extendMarkdown: md => {
             md.use(require('markdown-it-emoji'));
             md.use(require('markdown-it-footnote'));
-            md.use(require('markdown-it-sanitizer'));
             md.use(require('@iktakahiro/markdown-it-katex'), {"throwOnError" : false, "errorColor" : " #cc0000"});
             md.use(require('markdown-it-imsize'), {autofil: true});
             md.use(require('markdown-it-checkbox'));
             md.use(require('markdown-it-sub'));
+        }
+    },
+    plugins: {
+        '@vuepress/medium-zoom': 
+        {
+            selector: 'img',
+            delay: 1000,
+            options: {
+                margin: 24,
+                background: 'rgba(0,0,0,0.7)',
+                scrolloffset: 0,
+            }
         }
     }
 }
