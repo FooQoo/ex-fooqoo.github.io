@@ -1,7 +1,6 @@
 module.exports = {
     title: 'FooQooのメモ',
     description: '普段気になったことについて',
-    ga: 'UA-161520690-1',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
@@ -63,6 +62,11 @@ module.exports = {
                 background: 'rgba(0,0,0,0.7)',
                 scrolloffset: 0,
             }
+        },
+        '@vuepress/google-analytics': 
+        {
+            ga: 'UA-161520690-1',
         }
+        
     }
 }
