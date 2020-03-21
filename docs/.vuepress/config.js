@@ -1,6 +1,7 @@
 module.exports = {
     title: 'FooQooのメモ',
     description: '普段気になったことについて',
+    ga: 'UA-161520690-1',
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
