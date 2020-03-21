@@ -38,7 +38,19 @@ module.exports = {
                 href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css'
             }
 
+        ],
+        [
+            'script',
+            {
+                'async src': 'https://www.googletagmanager.com/gtag/js?id=UA-161520690-1'
+            }
+        ],
+        [
+            'script',
+            {},
+            "window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);};gtag('js', new Date());gtag('config', 'UA-161520690-1');"
         ]
+
     ],
     markdown: {
         anchor: { permalink: false},
@@ -52,21 +64,24 @@ module.exports = {
             md.use(require('markdown-it-sub'));
         }
     },
-    plugins: {
-        '@vuepress/medium-zoom': 
-        {
-            selector: 'img',
-            delay: 1000,
-            options: {
-                margin: 24,
-                background: 'rgba(0,0,0,0.7)',
-                scrolloffset: 0,
+    plugins: [
+        [
+            '@vuepress/medium-zoom',
+            {
+                selector: 'img',
+                delay: 1000,
+                options: {
+                        margin: 24,
+                    background: 'rgba(0,0,0,0.7)',
+                    scrolloffset: 0,
+                }
             }
-        },
-        '@vuepress/google-analytics': 
-        {
-            ga: 'UA-161520690-1',
-        }
-        
-    }
+        ],
+        [
+            '@vuepress/plugin-google-analytics',
+            {
+                ga: 'UA-161520690-1'
+            }
+        ]          
+    ]
 }
