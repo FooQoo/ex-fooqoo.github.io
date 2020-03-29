@@ -13,7 +13,8 @@ module.exports = {
                 collapsable: true,
                 children: [
                     '/dev/vuepress.html',
-                    '/life-hack/shinkansen_2020_0320.html'
+                    '/life-hack/shinkansen_2020_0320.html',
+                    '/life-hack/lifeplan_2020_0329.html'
                 ]
             }
        ]
