@@ -1,6 +1,6 @@
 ---
 home: true
-footer: Powered by [VuePress](https://github.com/vuejs/vuepress)  | MIT Licensed | Copyright © 2020-present FooQoo
+footer: Powered by VuePress | MIT Licensed | Copyright © 2020-present FooQoo
 ---
 
 # FooQooのメモ
